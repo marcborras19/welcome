@@ -1,0 +1,35 @@
+<html>
+
+<body>
+
+    
+    <h1>Escriu la contrasenya correcta</h1>
+    <br>
+    <form>
+        Contrasenya:<input type="password" id="contrasenya">
+
+        <button type = "button" onclick="autenticar()">Clica!</button>
+    </form>
+</body>
+<script>
+
+i=0;    
+function autenticar() {
+
+
+    if (document.getElementById("contrasenya").value == "Messi"){
+        alert("La contrasenya es correcta.");
+    }
+    else {
+        alert("La contrasenya es incorrecta."); 
+        i = i+1;         
+    }
+    if (i==3){
+        alert("Has introduït la contrasenya errònea 3 vagades")
+        document.getElementById("contrasenya").style.display="none";
+    }
+}
+
+</script>
+
+</html>
